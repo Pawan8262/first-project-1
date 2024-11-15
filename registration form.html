@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h2>Student Registration Form</h2>
+    <form action="submit_form.php" method="post">
+        <!-- Full Name -->
+        <label for="full_name">Name Of The Student:</label>
+        <input type="text" id="full_name" name="full_name" required>
+        <br><br>
+
+        <!-- Gender -->
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label>
+        <br><br>
+
+        <!-- Date of Birth -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+        <br><br>
+
+        <!-- Nationality -->
+        <label for="nationality">Nationality:</label>
+        <input type="text" id="nationality" name="nationality" required>
+        <br><br>
+
+        <!-- Address -->
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="3" required></textarea>
+        <br><br>
+
+        <!-- Contact Information -->
+        <label for="contact">Contact Information:</label>
+        <input type="tel" id="contact" name="contact" pattern="[0-9]{10}" required>
+        <br><br>
+
+        
+            <!-- Username -->
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <br><br>
+    
+            <!-- Password -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br><br>
+
+
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
